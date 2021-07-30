@@ -172,3 +172,23 @@ footer {
 .ncea ul li a:hover{
   color: #73e8ff;
 }
+
+.text-block p{
+  padding-top: 100px;
+  margin: 50px auto;
+  max-width: 1200px;
+  width: 80%;
+  line-height: 150%;
+  text-align: justify;
+}
+
+
+input[type=text] {
+  padding: 20px;
+  width: 80%;
+  background: #FFFFFF;
+  color: #000000;
+  font-size: 50px;
+  text-align: center;
+  outline: none;
+}

@@ -8,10 +8,35 @@
   <title>Coming soon: NCEA Level 3</title>
 </head>
 <body>
+  <header class="inverted">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="drop"><a href="#">More</a>
+          <div class="sub-menu">
+            <ul>
+              <li><a href="https://www.nzqa.govt.nz/ncea/assessment/search.do?query=digital+tech&view=exams&level=02" target="_blank">NZQA</a></li>
+              <li><a href="https://csfieldguide.org.nz/en/" target="_blank">CSFG</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Options</a>
+          <div class="sub-menu">
+            <ul>
+              <li class="dark"><a href="#">Dark-mode</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
 
   <section class="intro" id="n3">
     <h1>NCEA level 3</h1>
   </section>
+
+  </header>
 
   <section class="soon">
     <h2>What to expect for NCEA Level 3:</h2>
@@ -26,7 +51,7 @@
   </section>
 
 
-  <footer>
+  <footer class="inverted">
     <div class="ncea">
       <ul>
         <li><a href="NCEA1.html">NCEA Level 1</a></li>
@@ -36,5 +61,17 @@
    </div>
     &copy; Leijh Beale 2021 - All rights reserved
   </footer>
+
+  <script>
+    let li = document.querySelector('.dark')
+
+    li.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark-mode')
+
+    document.querySelectorAll('.inverted').forEach((result) => {
+      result.classList.toggle('invert');
+    });
+  })
+  </script>
 </body>
 </html>

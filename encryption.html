@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <div class="menu">
+    <div class="menu inverted">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -24,7 +24,7 @@
         <li><a href="#">Options</a>
           <div class="sub-menu">
             <ul>
-              <li><a href="#">Dark-mode</a></li>
+              <li class="dark"><a href="#">Dark-mode</a></li>
             </ul>
           </div>
         </li>
@@ -62,15 +62,27 @@
 
 
 
-  <footer>
-    <div class="ncea">
-      <ul>
-        <li><a href="NCEA1.html">NCEA Level 1</a></li>
-        <li><a href="index.html">NCEA Level 2</a></li>
-        <li><a href="NCEA3.html">NCEA Level 3</a></li>
-      </ul>
-   </div>
-    &copy; Leijh Beale 2021 - All rights reserved
-  </footer>
+<footer class="inverted">
+  <div class="ncea">
+    <ul>
+      <li><a href="NCEA1.html">NCEA Level 1</a></li>
+      <li><a href="index.html">NCEA Level 2</a></li>
+      <li><a href="NCEA3.html">NCEA Level 3</a></li>
+    </ul>
+ </div>
+  &copy; Leijh Beale 2021 - All rights reserved
+</footer>
+
+<script>
+  let li = document.querySelector('.dark')
+
+  li.addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark-mode')
+
+  document.querySelectorAll('.inverted').forEach((result) => {
+    result.classList.toggle('invert');
+  });
+})
+</script>
 </body>
 </html>

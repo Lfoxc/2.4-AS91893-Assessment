@@ -310,3 +310,13 @@ input[type=text] {
     row-gap: 10px;
   }
 }
+
+/*Dark-mode*/
+
+.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.invert {
+  filter: invert(1) hue-rotate(180deg);
+}

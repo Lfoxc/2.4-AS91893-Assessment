@@ -12,11 +12,6 @@ body {
 }
 
 /*Navigation*/
-.nav {
-  height: 70px;
-  text-align: left;
-}
-
 .menu {
   background-color: #29b6f6;
   text-align: center;
@@ -183,7 +178,7 @@ footer {
 }
 
 /*Paragraph CSS for all pages*/
-.text-block p{
+.text-block {
   padding-top: 100px;
   margin: 50px auto;
   max-width: 1200px;
@@ -192,64 +187,11 @@ footer {
   text-align: justify;
 }
 
-/*Encryption javascript interactive*/
-.cc {
-  text-align: center;
-  margin: 50px auto;
-  width: 80%;
+.text-block img {
+  width: 100%;
+  margin-top: 30px;
 }
 
-input[type=text] {
-  padding: 20px;
-  width: 80%;
-  background: #FFFFFF;
-  color: #000000;
-  font-size: 50px;
-  text-align: center;
-  outline: none;
-}
-
-/*Option selection for error control and computer security page*/
-.text-block ul {
-  width: 80%;
-  padding: 20px;
-  margin: 50px auto;
-  line-height: 400%;
-  text-align: justify;
-  background: #FFFFFF;
-}
-
-.text-block li {
-  list-style: none;
-}
-
-/*Buttons for error control page*/
-.click {
-  text-align: center;
-  width: 10%;
-  padding: 10px 20px;
-  border: 1px solid #0086c3;
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-/*Javascript interactive for error control page*/
-.multiple {
-  text-align: center;
-  margin: 50px auto;
-  width: 80%;
-}
-
-#ans {
-  border-radius: 10px;
-  border: 1px solid #0086c3;
-  width: 10%;
-  padding: 10px;
-}
-
-.mult {
-  display: inline-block;
-}
 
 /*NCEA level 1 & 3 page*/
 #n1 {
@@ -297,13 +239,13 @@ input[type=text] {
   color: #FFFFFF;
 }
 
-/*Hero image for about page*/
+/*Hero image + text block for about page*/
 #i {
   background-image: url(images/ab.jpg);
 }
 
-#aboutus p {
-  padding-top: 10px;  
+#aboutus {
+  padding-top: 10px;
 }
 
 

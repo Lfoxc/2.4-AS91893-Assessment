@@ -12,67 +12,80 @@ body {
 }
 
 /*Navigation*/
-.menu {
-  background-color: #29b6f6;
-  text-align: center;
+
+nav .logo {
+  font-family: 'Poppins', sans-serif;
+  float: left;
+  font-size: 30px;
+  color: #FFFFFF;
+  margin: 30px;
+}
+
+nav .fas{
+  margin-left: 5px;
+}
+
+.dark .fas {
+  margin-right: 5px;
+}
+
+nav {
+  background: #29b6f6;
   position: fixed;
   width: 100%;
   top: 0;
 }
 
-.menu ul {
-  display: flex;
+nav ul {
+  float: right;
   list-style: none;
-  justify-content: center;
+  position: relative;
+  margin-right: 50px;
 }
 
-.menu ul li a {
-    color: #ffffff;
-    text-decoration: none;
+nav ul li {
+  float: left;
+  background: #29b6f6;
+  display: inline-block;
+  margin: 0 5px;
 }
 
-.menu ul li a:hover{
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  width: 150px;
+  padding: 17px;
+  line-height: 90px;
+}
+
+nav ul li a:hover{
   color: #73e8ff;
 }
 
-.menu ul li {
-  width: 150px;
-  padding: 15px;
-  margin: 15px;
+nav ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
 }
 
-.sub-menu {
-  display: none;
-}
-
-.menu ul li:hover .sub-menu {
-  display: block;
+nav ul ul {
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
-  background: #29b6f6;
-  margin-top: 15px;
-  margin-left: 10px;
+  top: 70px;
 }
 
-.menu ul li:hover .sub-menu ul{
-  display: block;
-  margin: 10px;
-}
-
-.menu ul li:hover .sub-menu ul li {
-  text-align: left;
-  width: 75px;
-  padding: 10px;
-  background: transparent;
-  border-radius: 0;
+nav ul ul li {
+  position: relative;
+  text-align: center;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
   border-bottom: 2px solid #0086c3;
 }
 
-.menu ul li:hover .sub-menu ul li:last-child {
+nav ul ul li:last-child {
   border-bottom: none;
-}
-
-.menu ul li:hover .sub-menu ul li a:hover {
-  color: #73e8ff;
 }
 
 /*Hero image + introduction*/
@@ -93,7 +106,6 @@ body {
   color: #FFFFFF;
   padding-top: 250px;
   font-weight: 150;
-
 }
 
 .intro h3{
@@ -109,13 +121,17 @@ body {
   grid-gap: 10px;
 }
 
+.box .fas {
+  margin-bottom: 20px;
+}
+
 .box {
   margin: 70px;
   padding: 30px;
   text-align: center;
   justify-content: center;
   background: #FFFFFF;
-  box-shadow: #000000;
+  box-shadow: 0 1px 5px 1px #aaaaaa;
 }
 
 .box h3 {
@@ -256,6 +272,13 @@ footer {
     row-gap: 10px;
   }
 }
+
+@media only screen and (max-width: 1200px)  {
+  .menu ul li:hover .sub-menu ul {
+    width: 50%;
+  }
+}
+
 
 /*Dark-mode*/
 

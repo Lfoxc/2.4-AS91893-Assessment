@@ -8,16 +8,19 @@
 }
 
 body {
-  background: #F2F3F4;
+  background-image: url(images/circuit.png);
 }
 
 /*Navigation*/
 nav .logo {
-  font-family: 'Poppins', sans-serif;
   float: left;
-  font-size: 30px;
-  color: #FFFFFF;
   margin: 30px;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
 }
 
 nav .fas{
@@ -40,7 +43,7 @@ nav ul {
   float: right;
   list-style: none;
   position: relative;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
 nav ul li {
@@ -54,7 +57,7 @@ nav ul li a {
   color: #ffffff;
   text-decoration: none;
   width: 150px;
-  padding: 9px;
+  padding: 15px;
   line-height: 90px;
 }
 
@@ -170,8 +173,8 @@ nav ul ul li:last-child {
   color: #FFFFFF;
 }
 
-#overview > box, h3 {
-  margin-bottom: 20px;
+#overview h3 {
+  margin-bottom: 25px;
 }
 
 /*Footer + NCEA links*/
@@ -181,37 +184,11 @@ footer {
   padding: 20px 25px;
 }
 
-.ncea {
-  background-color: #29b6f6;
-  text-align: center;
-  width: 100%;
-}
-
-.ncea ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-
-.ncea ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.ncea ul li {
-  width: 400px;
-  padding: 15px;
-  margin: 15px;
-  border-radius: 0;
-  border-bottom: 2px solid #0086c3;
-}
-
-.ncea ul li a:hover{
-  color: #73e8ff;
-}
-
 /*Paragraph CSS for all pages*/
 .text-block {
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 5px 1px #aaaaaa;
+  padding: 40px;
   margin: 50px auto;
   max-width: 1200px;
   width: 80%;
@@ -255,7 +232,7 @@ footer {
   background-image: url(images/sec.jpg);
 }
 
-#welcome2 {
+#n2 {
   background-image: url(images/main.jpg);
 }
 
@@ -275,19 +252,26 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-  #welcome .credit {
+  .credit {
     bottom: 1px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .credit {
+  #n2 .credit {
     bottom: 60px;
   }
 }
 
+
 @media only screen and (max-width: 500px) {
   #welcome {
+    padding-bottom: 600px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #n1, #n2, #n3 {
     padding-bottom: 600px;
   }
 }

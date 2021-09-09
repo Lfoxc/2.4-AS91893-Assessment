@@ -1,3 +1,10 @@
+:root {
+  --main-color: #29b6f6;
+  --hover-color: #73e8ff;
+  --hero-heading-hover: #FFFFFF;
+  --shadow: #aaaaaa;
+}
+
 /*Default CSS for all pages*/
 * {
   margin: 0 auto;
@@ -17,9 +24,14 @@ nav .logo {
   margin: 30px;
 }
 
+#home {
+  font-size: 30px;
+  color: var(--hero-heading-hover);
+}
+
 nav .logo a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--hero-heading-hover);
   font-size: 30px;
 }
 
@@ -33,7 +45,7 @@ nav .fas{
 
 nav {
   top: 0;
-  background: #29b6f6;
+  background: var(--main-color);
   position: fixed;
   width: 100%;
   justify-content: center;
@@ -48,13 +60,13 @@ nav ul {
 
 nav ul li {
   float: left;
-  background: #29b6f6;
+  background: var(--main-color);
   margin: 0 5px;
   display: inline-block;
 }
 
 nav ul li a {
-  color: #ffffff;
+  color: var(--hero-heading-hover);
   text-decoration: none;
   width: 150px;
   padding: 15px;
@@ -62,7 +74,7 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-  color: #73e8ff;
+  color: var(--hover-color);
 }
 
 nav ul li:hover > ul {
@@ -107,20 +119,20 @@ nav ul ul li:last-child {
 
 .intro h1{
   font-size: 50px;
-  color: #FFFFFF;
+  color: var(--hero-heading-hover);
   padding-top: 250px;
   font-weight: 150;
 }
 
 .intro h3{
   font-size: 25px;
-  color: #FFFFFF;
+  color: var(--hero-heading-hover);
   font-weight: 150;
 }
 
 .credit {
   background: #323232;
-  color: #FFFFFF;
+  color: var(--hero-heading-hover);
   font-size: 15px;
   width: 300px;
   padding: 15px;
@@ -146,8 +158,8 @@ nav ul ul li:last-child {
   padding: 30px;
   text-align: center;
   justify-content: center;
-  background: #FFFFFF;
-  box-shadow: 0 1px 5px 1px #aaaaaa;
+  background: var(--hero-heading-hover);
+  box-shadow: 0 1px 5px 1px var(--shadow);
 }
 
 .box h3 {
@@ -162,15 +174,15 @@ nav ul ul li:last-child {
 
 .box .button {
   padding: 10px 20px;
-  border: 1px solid #29b6f6;
+  border: 1px solid var(--main-color);
   font-size: 15px;
   text-decoration: none;
   color: #000000;
 }
 
 .box .button:hover{
-  background-color: #29b6f6;
-  color: #FFFFFF;
+  background-color: var(--main-color);
+  color: var(--hero-heading-hover);
 }
 
 #overview h3 {
@@ -179,15 +191,15 @@ nav ul ul li:last-child {
 
 /*Footer + NCEA links*/
 footer {
-  background-color: #29b6f6;
-  color: #FFFFFF;
+  background-color: var(--main-color);
+  color: var(--hero-heading-hover);
   padding: 20px 25px;
 }
 
 /*Paragraph CSS for all pages*/
 .text-block {
-  background-color: #FFFFFF;
-  box-shadow: 0 1px 5px 1px #aaaaaa;
+  background-color: var(--hero-heading-hover);
+  box-shadow: 0 1px 5px 1px var(--shadow);
   padding: 40px;
   margin: 50px auto;
   max-width: 1200px;
@@ -201,7 +213,7 @@ footer {
 }
 
 
-/*NCEA level 1 & 3 page*/
+/*NCEA level 1, 2 & 3 page*/
 #n1 {
   background-image: url(images/one.jpg);
 }
@@ -212,6 +224,10 @@ footer {
 
 #level1 {
   grid-template-columns: 1fr 1fr;
+}
+
+#n2 {
+  background-image: url(images/main.jpg);
 }
 
 /*Hero image for about page*/
@@ -232,9 +248,6 @@ footer {
   background-image: url(images/sec.jpg);
 }
 
-#n2 {
-  background-image: url(images/main.jpg);
-}
 
 
 /*Media queries */

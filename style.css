@@ -49,6 +49,7 @@ nav {
   position: fixed;
   width: 100%;
   justify-content: center;
+  z-index: 10;
 }
 
 nav ul {
@@ -129,6 +130,7 @@ nav ul ul li:last-child {
   color: var(--hero-heading-hover);
   font-weight: 150;
 }
+
 
 .credit {
   background: #323232;
@@ -258,20 +260,27 @@ footer {
   }
 }
 
-@media only screen and (max-width: 700px) {
-  .logo {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 500px) {
   .credit {
     bottom: 1px;
   }
 }
 
+
 @media only screen and (max-width: 500px) {
-  #n2 .credit {
+  #i > .credit {
+    bottom: 60px;
+  }
+
+  #e > .credit {
+    bottom: 60px;
+  }
+
+  #ec > .credit {
+    bottom: 60px;
+  }
+
+  #cs > .credit {
     bottom: 60px;
   }
 }
@@ -289,6 +298,75 @@ footer {
   }
 }
 
+/* Hamburger menu */
+.show, .icon, input {
+  display: none;
+}
+
+@media all and (max-width: 700px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+
+  nav .logo {
+    width: 100%;
+  }
+
+  nav ul li, nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul {
+    top: 70px;
+    position: static;
+    border-top: none;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  nav ul ul a {
+    padding-left: 50px;
+  }
+
+  nav ul ul li {
+    border-bottom: none;
+  }
+
+  .show{
+    display: block;
+    color: var(--hero-heading-hover);
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+
+  .show:hover {
+    color: var(--hover-color);
+  }
+
+  .icon{
+    display: block;
+    color: var(--hero-heading-hover);
+    position: absolute;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    padding-top: 10px;
+    font-size: 30px;
+  }
+
+
+  .show + a, ul {
+    display: none;
+  }
+
+  [id^=btn]:checked + ul {
+    display: block;
+  }
+}
 
 /*Dark-mode*/
 

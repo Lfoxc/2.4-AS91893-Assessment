@@ -49,7 +49,7 @@ nav .fas{
 
 nav {
   top: 0;
-  background: var(--main-color);
+  background-color: var(--main-color);
   position: fixed;
   width: 100%;
   justify-content: center;
@@ -216,9 +216,9 @@ footer {
 
 .text-block img {
   width: 100%;
+  opacity: 1;
   margin-top: 30px;
 }
-
 
 /*NCEA level 1, 2 & 3 page*/
 #n1 {
@@ -308,7 +308,7 @@ footer {
   display: none;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 850px) {
   nav ul{
     margin-right: 0px;
     float: left;
@@ -324,7 +324,6 @@ footer {
   }
 
   nav ul ul {
-    top: 70px;
     position: static;
     border-top: none;
     display: none;
@@ -340,11 +339,19 @@ footer {
     border-bottom: none;
   }
 
+  nav ul li a{
+    line-height: 60px;
+  }
+
+  nav ul ul li a {
+    line-height: 40px;
+  }
+
   .show{
     display: block;
     color: var(--hero-heading-hover);
     padding: 0 20px;
-    line-height: 70px;
+    line-height: 60px;
     cursor: pointer;
   }
 
